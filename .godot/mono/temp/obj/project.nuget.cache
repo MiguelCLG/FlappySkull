@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "ouChCPAWYg/gOfaPTXslrfrimKbGXnyke4VC8EuXSFoKozL3v7Ewj6p1D7Rg5ytnxLYj/UK23Cv7NqNHbuvfyQ==",
+  "success": true,
+  "projectFilePath": "D:\\PC FOLDERS\\DESKTOP\\GODOTGAMES\\PROJECTS\\FLAPPYSKULL\\FlappySkull_TwentyGameChallenge.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Miguel\\.nuget\\packages\\godot.sourcegenerators\\4.2.2\\godot.sourcegenerators.4.2.2.nupkg.sha512",
+    "C:\\Users\\Miguel\\.nuget\\packages\\godotsharp\\4.2.2\\godotsharp.4.2.2.nupkg.sha512",
+    "C:\\Users\\Miguel\\.nuget\\packages\\godotsharpeditor\\4.2.2\\godotsharpeditor.4.2.2.nupkg.sha512"
+  ],
+  "logs": []
+}

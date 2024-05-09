@@ -1,0 +1,46 @@
+[gd_scene load_steps=4 format=3 uid="uid://7r7wsoussq0v"]
+
+[ext_resource type="Texture2D" uid="uid://b7hwiu8q4msq4" path="res://Images/column.png" id="1_jyrw3"]
+[ext_resource type="Script" path="res://Scripts/column.cs" id="1_wmokj"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_h6g5c"]
+size = Vector2(1, 174)
+
+[node name="Columns" type="Node2D"]
+script = ExtResource("1_wmokj")
+minPos = 75
+maxPos = 200
+
+[node name="TopColumn" type="StaticBody2D" parent="."]
+position = Vector2(0, -208)
+rotation = -3.14159
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="TopColumn"]
+position = Vector2(36, -77)
+scale = Vector2(4.6, 8.7)
+build_mode = 1
+polygon = PackedVector2Array(-26.9565, -14.4828, 11.5217, -14.4828, 11.5217, -9.42529, 7.3913, -9.42529, 7.3913, 32.069, -22.6087, 32.069, -22.6087, -9.54023, -26.9565, -9.54023)
+
+[node name="Sprite2D" type="Sprite2D" parent="TopColumn"]
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("1_jyrw3")
+
+[node name="BottomColumn" type="StaticBody2D" parent="."]
+position = Vector2(0, 207)
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="BottomColumn"]
+position = Vector2(36, -77)
+scale = Vector2(4.6, 8.7)
+build_mode = 1
+polygon = PackedVector2Array(-26.9565, -14.4828, 11.5217, -14.4828, 11.5217, -9.42529, 7.3913, -9.42529, 7.3913, 32.069, -22.6087, 32.069, -22.6087, -9.54023, -26.9565, -9.54023)
+
+[node name="Sprite2D" type="Sprite2D" parent="BottomColumn"]
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("1_jyrw3")
+
+[node name="ScoreTrigger" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ScoreTrigger"]
+shape = SubResource("RectangleShape2D_h6g5c")
+
+[connection signal="body_entered" from="ScoreTrigger" to="." method="OnBodyEntered"]

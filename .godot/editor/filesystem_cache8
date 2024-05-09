@@ -1,0 +1,15 @@
+ea4bc82a6ad023ab7ee23ee620429895
+::res://::1715263263
+icon.svg::CompressedTexture2D::4684285967414597548::1715261704::1715261711::1::::<><>::
+::res://Images/::1715265716
+background.jpg::CompressedTexture2D::6595866183437943632::1715264490::1715264502::1::::<><>::
+column.png::CompressedTexture2D::4648265486792419317::1715265642::1715265643::1::::<><>::
+column_2.png::CompressedTexture2D::7643204090441594007::1715265716::1715265717::1::::<><>::
+skull.png::CompressedTexture2D::9119761607426341175::1715262678::1715262698::1::::<><>::
+skull_2.png::CompressedTexture2D::2051169183164124526::1715262696::1715262698::1::::<><>::
+::res://Images/clouds/::1715264502
+black-cloud.png::CompressedTexture2D::588754925933960937::1715264461::1715264502::1::::<><>::
+::res://Scenes/::1715264553
+level.tscn::PackedScene::2410379088245936719::1715264553::0::1::::<><>::uid://c08c7m7cqg8oa::::res://Images/background.jpg<>uid://cmsbn73qhmxsx::::res://Scenes/Skull.tscn
+Skull.tscn::PackedScene::5652351947667745063::1715264553::0::1::::<><>::uid://d26xe2kdpfoh0::::res://Images/skull.png
+::res://Scripts/::1715262656

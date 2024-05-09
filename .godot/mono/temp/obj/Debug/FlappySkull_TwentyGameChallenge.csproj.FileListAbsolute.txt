@@ -1,0 +1,17 @@
+D:\PC FOLDERS\Desktop\GodotGames\Projects\FlappySkull\.godot\mono\temp\bin\Debug\FlappySkull_TwentyGameChallenge.deps.json
+D:\PC FOLDERS\Desktop\GodotGames\Projects\FlappySkull\.godot\mono\temp\bin\Debug\FlappySkull_TwentyGameChallenge.runtimeconfig.json
+D:\PC FOLDERS\Desktop\GodotGames\Projects\FlappySkull\.godot\mono\temp\bin\Debug\FlappySkull_TwentyGameChallenge.dll
+D:\PC FOLDERS\Desktop\GodotGames\Projects\FlappySkull\.godot\mono\temp\bin\Debug\FlappySkull_TwentyGameChallenge.pdb
+D:\PC FOLDERS\Desktop\GodotGames\Projects\FlappySkull\.godot\mono\temp\bin\Debug\GodotSharp.dll
+D:\PC FOLDERS\Desktop\GodotGames\Projects\FlappySkull\.godot\mono\temp\bin\Debug\GodotSharpEditor.dll
+D:\PC FOLDERS\Desktop\GodotGames\Projects\FlappySkull\.godot\mono\temp\obj\Debug\FlappySkull_TwentyGameChallenge.csproj.AssemblyReference.cache
+D:\PC FOLDERS\Desktop\GodotGames\Projects\FlappySkull\.godot\mono\temp\obj\Debug\FlappySkull_TwentyGameChallenge.GeneratedMSBuildEditorConfig.editorconfig
+D:\PC FOLDERS\Desktop\GodotGames\Projects\FlappySkull\.godot\mono\temp\obj\Debug\FlappySkull_TwentyGameChallenge.AssemblyInfoInputs.cache
+D:\PC FOLDERS\Desktop\GodotGames\Projects\FlappySkull\.godot\mono\temp\obj\Debug\FlappySkull_TwentyGameChallenge.AssemblyInfo.cs
+D:\PC FOLDERS\Desktop\GodotGames\Projects\FlappySkull\.godot\mono\temp\obj\Debug\FlappySkull_TwentyGameChallenge.csproj.CoreCompileInputs.cache
+D:\PC FOLDERS\Desktop\GodotGames\Projects\FlappySkull\.godot\mono\temp\obj\Debug\FlappySk.174DD3C5.Up2Date
+D:\PC FOLDERS\Desktop\GodotGames\Projects\FlappySkull\.godot\mono\temp\obj\Debug\FlappySkull_TwentyGameChallenge.dll
+D:\PC FOLDERS\Desktop\GodotGames\Projects\FlappySkull\.godot\mono\temp\obj\Debug\refint\FlappySkull_TwentyGameChallenge.dll
+D:\PC FOLDERS\Desktop\GodotGames\Projects\FlappySkull\.godot\mono\temp\obj\Debug\FlappySkull_TwentyGameChallenge.pdb
+D:\PC FOLDERS\Desktop\GodotGames\Projects\FlappySkull\.godot\mono\temp\obj\Debug\FlappySkull_TwentyGameChallenge.genruntimeconfig.cache
+D:\PC FOLDERS\Desktop\GodotGames\Projects\FlappySkull\.godot\mono\temp\obj\Debug\ref\FlappySkull_TwentyGameChallenge.dll

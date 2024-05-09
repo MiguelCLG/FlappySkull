@@ -1,0 +1,33 @@
+[gd_scene load_steps=5 format=3 uid="uid://baluudxjlo1db"]
+
+[ext_resource type="Script" path="res://Scripts/manager.cs" id="1_2n5nr"]
+[ext_resource type="Texture2D" uid="uid://c08c7m7cqg8oa" path="res://Images/background.jpg" id="1_eiqup"]
+[ext_resource type="PackedScene" uid="uid://cmsbn73qhmxsx" path="res://Scenes/Skull.tscn" id="1_plskv"]
+[ext_resource type="PackedScene" uid="uid://7r7wsoussq0v" path="res://Scenes/column.tscn" id="3_n3v3f"]
+
+[node name="Level" type="Node2D"]
+script = ExtResource("1_2n5nr")
+
+[node name="Background" type="Sprite2D" parent="."]
+position = Vector2(186, 475)
+texture = ExtResource("1_eiqup")
+
+[node name="Skull" parent="." instance=ExtResource("1_plskv")]
+position = Vector2(176, 305)
+
+[node name="Column" parent="." instance=ExtResource("3_n3v3f")]
+position = Vector2(457, 320)
+minPos = 60
+maxPos = 120
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Label" type="Label" parent="CanvasLayer"]
+anchors_preset = 10
+anchor_right = 1.0
+offset_bottom = 23.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "Score: 0"
+horizontal_alignment = 1
+vertical_alignment = 1
