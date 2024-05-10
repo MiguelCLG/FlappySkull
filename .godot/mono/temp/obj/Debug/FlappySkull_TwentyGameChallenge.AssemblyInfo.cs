@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("FlappySkull_TwentyGameChallenge")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e88f2588cb7d2885b3a2909e62a2e7e99a91fcd4")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6b93542a52b6226097fd53ed7e394cd84ff32672")]
 [assembly: System.Reflection.AssemblyProductAttribute("FlappySkull_TwentyGameChallenge")]
 [assembly: System.Reflection.AssemblyTitleAttribute("FlappySkull_TwentyGameChallenge")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

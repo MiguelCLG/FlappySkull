@@ -1,0 +1,13 @@
+{
+  "profiles": {
+    "FlappySkull_TwentyGameChallenge": {
+      "commandName": "Project",
+      "workingDirectory": "D:\\PC FOLDERS\\Desktop\\Godot_v4.2.2-stable_mono_win64/Godot_v4.2.2-stable_mono_win64.exe"
+    },
+    "Profile 1": {
+      "commandName": "Executable",
+      "executablePath": "D:\\PC FOLDERS\\Desktop\\Godot_v4.2.2-stable_mono_win64\\Godot_v4.2.2-stable_mono_win64.exe",
+      "workingDirectory": "D:\\PC FOLDERS\\Desktop\\GodotGames\\Projects\\FlappySkull"
+    }
+  }
+}

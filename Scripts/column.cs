@@ -57,6 +57,8 @@ public partial class column : Node2D
         {
             PickupSound.Play();
             skull.AddScore(1);
+            if(skull.GetScore() > skull.GetHighScore())
+                skull.SetHighScore(skull.GetScore());
             EventRegistry.GetEventPublisher("OnPassColumn").RaiseEvent(skull);
         }
     }

@@ -24,7 +24,7 @@ texture = ExtResource("1_eiqup")
 [node name="Clouds" parent="." instance=ExtResource("5_n6n4m")]
 position = Vector2(629, 322)
 
-[node name="Skull" parent="." instance=ExtResource("1_plskv")]
+[node name="Skull" parent="." groups=["Persist"] instance=ExtResource("1_plskv")]
 position = Vector2(176, 317)
 
 [node name="Column" parent="." instance=ExtResource("3_n3v3f")]
@@ -34,10 +34,21 @@ maxPos = 120
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
-[node name="Label" type="Label" parent="CanvasLayer"]
+[node name="HighScoreLabel" type="Label" parent="CanvasLayer"]
 anchors_preset = 10
 anchor_right = 1.0
 offset_bottom = 23.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "High Score: 0"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ScoreLabel" type="Label" parent="CanvasLayer"]
+anchors_preset = 10
+anchor_right = 1.0
+offset_top = 24.0
+offset_bottom = 47.0
 grow_horizontal = 2
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 text = "Score: 0"
@@ -65,8 +76,7 @@ grow_horizontal = 2
 grow_vertical = 2
 text = "Start by pressing one of these:
 - Space, 
-- Up Arrow 
-- Left Mouse Click"
+- Up Arrow "
 horizontal_alignment = 1
 vertical_alignment = 1
 autowrap_mode = 2
