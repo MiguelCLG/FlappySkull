@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\PC FOLDERS\\DESKTOP\\GODOTGAMES\\PROJECTS\\FLAPPYSKULL\\FlappySkull_TwentyGameChallenge.csproj": {}
+    "D:\\PC FOLDERS\\Desktop\\GodotGames\\Projects\\FlappySkull\\FlappySkull_TwentyGameChallenge.csproj": {}
   },
   "projects": {
-    "D:\\PC FOLDERS\\DESKTOP\\GODOTGAMES\\PROJECTS\\FLAPPYSKULL\\FlappySkull_TwentyGameChallenge.csproj": {
+    "D:\\PC FOLDERS\\Desktop\\GodotGames\\Projects\\FlappySkull\\FlappySkull_TwentyGameChallenge.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\PC FOLDERS\\DESKTOP\\GODOTGAMES\\PROJECTS\\FLAPPYSKULL\\FlappySkull_TwentyGameChallenge.csproj",
+        "projectUniqueName": "D:\\PC FOLDERS\\Desktop\\GodotGames\\Projects\\FlappySkull\\FlappySkull_TwentyGameChallenge.csproj",
         "projectName": "FlappySkull_TwentyGameChallenge",
-        "projectPath": "D:\\PC FOLDERS\\DESKTOP\\GODOTGAMES\\PROJECTS\\FLAPPYSKULL\\FlappySkull_TwentyGameChallenge.csproj",
+        "projectPath": "D:\\PC FOLDERS\\Desktop\\GodotGames\\Projects\\FlappySkull\\FlappySkull_TwentyGameChallenge.csproj",
         "packagesPath": "C:\\Users\\Miguel\\.nuget\\packages\\",
-        "outputPath": "D:\\PC FOLDERS\\DESKTOP\\GODOTGAMES\\PROJECTS\\FLAPPYSKULL\\.godot\\mono\\temp\\obj\\",
+        "outputPath": "D:\\PC FOLDERS\\Desktop\\GodotGames\\Projects\\FlappySkull\\.godot\\mono\\temp\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Miguel\\AppData\\Roaming\\NuGet\\NuGet.Config",

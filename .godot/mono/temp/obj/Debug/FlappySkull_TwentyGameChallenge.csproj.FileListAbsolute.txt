@@ -15,3 +15,4 @@ D:\PC FOLDERS\Desktop\GodotGames\Projects\FlappySkull\.godot\mono\temp\obj\Debug
 D:\PC FOLDERS\Desktop\GodotGames\Projects\FlappySkull\.godot\mono\temp\obj\Debug\FlappySkull_TwentyGameChallenge.pdb
 D:\PC FOLDERS\Desktop\GodotGames\Projects\FlappySkull\.godot\mono\temp\obj\Debug\FlappySkull_TwentyGameChallenge.genruntimeconfig.cache
 D:\PC FOLDERS\Desktop\GodotGames\Projects\FlappySkull\.godot\mono\temp\obj\Debug\ref\FlappySkull_TwentyGameChallenge.dll
+D:\PC FOLDERS\Desktop\GodotGames\Projects\FlappySkull\.godot\mono\temp\obj\Debug\FlappySkull_TwentyGameChallenge.sourcelink.json

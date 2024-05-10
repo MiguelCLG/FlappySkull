@@ -1,9 +1,12 @@
-[gd_scene load_steps=5 format=3 uid="uid://baluudxjlo1db"]
+[gd_scene load_steps=6 format=3 uid="uid://baluudxjlo1db"]
 
 [ext_resource type="Script" path="res://Scripts/manager.cs" id="1_2n5nr"]
 [ext_resource type="Texture2D" uid="uid://c08c7m7cqg8oa" path="res://Images/background.jpg" id="1_eiqup"]
 [ext_resource type="PackedScene" uid="uid://cmsbn73qhmxsx" path="res://Scenes/Skull.tscn" id="1_plskv"]
 [ext_resource type="PackedScene" uid="uid://7r7wsoussq0v" path="res://Scenes/column.tscn" id="3_n3v3f"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_647h3"]
+size = Vector2(376, 20)
 
 [node name="Level" type="Node2D"]
 script = ExtResource("1_2n5nr")
@@ -31,3 +34,16 @@ theme_override_colors/font_color = Color(0, 0, 0, 1)
 text = "Score: 0"
 horizontal_alignment = 1
 vertical_alignment = 1
+
+[node name="DeathCollisions" type="Area2D" parent="."]
+priority = 1
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="DeathCollisions"]
+position = Vector2(177, -17)
+shape = SubResource("RectangleShape2D_647h3")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="DeathCollisions"]
+position = Vector2(183, 617)
+shape = SubResource("RectangleShape2D_647h3")
+
+[connection signal="body_entered" from="DeathCollisions" to="Skull" method="OnDeathCollisionsEnter"]

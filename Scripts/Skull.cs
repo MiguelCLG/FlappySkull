@@ -8,7 +8,8 @@ public partial class Skull : RigidBody2D
     {
         if (Input.IsActionJustPressed("jump"))
         {
-            ApplyImpulse(new Vector2(0, -400));
+            LinearVelocity = Vector2.Zero;
+            ApplyImpulse(new Vector2(0, -300));
         }
     }
 
@@ -22,6 +23,11 @@ public partial class Skull : RigidBody2D
         this.score += score;
     }
 
+    public void OnDeathCollisionsEnter(Node body)
+    {
+        if(body.Name == "Skull")
+            EventRegistry.GetEventPublisher("OnColumnHit").RaiseEvent(this);
+    }
     public void OnBodyEntered(Node body) {
         if(body.Name == "TopColumn" || body.Name == "BottomColumn")
         {
