@@ -1,0 +1,28 @@
+[gd_scene load_steps=3 format=3 uid="uid://kseneciscauo"]
+
+[ext_resource type="Script" path="res://Scripts/CloudController.cs" id="1_adn3y"]
+[ext_resource type="Texture2D" uid="uid://ceu7bl85sd4n4" path="res://Images/clouds/WhiteCloud.svg" id="1_llk1g"]
+
+[node name="Clouds" type="Node2D" node_paths=PackedStringArray("BackCloud", "MidCloud", "FrontCloud")]
+script = ExtResource("1_adn3y")
+BackCloud = NodePath("BackCloud")
+MidCloud = NodePath("MidCloud")
+FrontCloud = NodePath("FrontCloud")
+BackCloudBaseSpeed = 1.0
+MidCloudBaseSpeed = 2.0
+FrontCloudBaseSpeed = 3.0
+
+[node name="BackCloud" type="Sprite2D" parent="."]
+position = Vector2(1.52588e-05, -3.8147e-06)
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("1_llk1g")
+
+[node name="MidCloud" type="Sprite2D" parent="."]
+position = Vector2(3.8147e-06, -1.52588e-05)
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("1_llk1g")
+
+[node name="FrontCloud" type="Sprite2D" parent="."]
+position = Vector2(0, 3.8147e-06)
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_llk1g")

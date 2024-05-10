@@ -1,9 +1,15 @@
-[gd_scene load_steps=6 format=3 uid="uid://baluudxjlo1db"]
+[gd_scene load_steps=10 format=3 uid="uid://baluudxjlo1db"]
 
 [ext_resource type="Script" path="res://Scripts/manager.cs" id="1_2n5nr"]
 [ext_resource type="Texture2D" uid="uid://c08c7m7cqg8oa" path="res://Images/background.jpg" id="1_eiqup"]
 [ext_resource type="PackedScene" uid="uid://cmsbn73qhmxsx" path="res://Scenes/Skull.tscn" id="1_plskv"]
 [ext_resource type="PackedScene" uid="uid://7r7wsoussq0v" path="res://Scenes/column.tscn" id="3_n3v3f"]
+[ext_resource type="PackedScene" uid="uid://kseneciscauo" path="res://Scenes/clouds.tscn" id="5_n6n4m"]
+[ext_resource type="Script" path="res://Scripts/StartGameInput.cs" id="6_5drjn"]
+[ext_resource type="AudioStream" uid="uid://7dm5s7ryemx3" path="res://Sounds/death.wav" id="6_8lavo"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_7pod5"]
+bg_color = Color(0.270588, 0.270588, 0.270588, 0.882353)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_647h3"]
 size = Vector2(376, 20)
@@ -15,8 +21,11 @@ script = ExtResource("1_2n5nr")
 position = Vector2(186, 475)
 texture = ExtResource("1_eiqup")
 
+[node name="Clouds" parent="." instance=ExtResource("5_n6n4m")]
+position = Vector2(629, 322)
+
 [node name="Skull" parent="." instance=ExtResource("1_plskv")]
-position = Vector2(176, 305)
+position = Vector2(176, 317)
 
 [node name="Column" parent="." instance=ExtResource("3_n3v3f")]
 position = Vector2(457, 320)
@@ -35,15 +44,50 @@ text = "Score: 0"
 horizontal_alignment = 1
 vertical_alignment = 1
 
+[node name="StartGameInput" type="Panel" parent="CanvasLayer"]
+process_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_7pod5")
+script = ExtResource("6_5drjn")
+
+[node name="Label" type="Label" parent="CanvasLayer/StartGameInput"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 60.0
+offset_right = -60.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "Start by pressing one of these:
+- Space, 
+- Up Arrow 
+- Left Mouse Click"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2
+
 [node name="DeathCollisions" type="Area2D" parent="."]
 priority = 1
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="DeathCollisions"]
-position = Vector2(177, -17)
+position = Vector2(177, -57)
 shape = SubResource("RectangleShape2D_647h3")
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="DeathCollisions"]
-position = Vector2(183, 617)
+position = Vector2(183, 652)
 shape = SubResource("RectangleShape2D_647h3")
 
+[node name="DeathSound" type="AudioStreamPlayer2D" parent="."]
+unique_name_in_owner = true
+process_mode = 3
+position = Vector2(177, 306)
+stream = ExtResource("6_8lavo")
+volume_db = 6.0
+
 [connection signal="body_entered" from="DeathCollisions" to="Skull" method="OnDeathCollisionsEnter"]
+[connection signal="finished" from="DeathSound" to="." method="RestartGame"]

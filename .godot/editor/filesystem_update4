@@ -1,6 +1,9 @@
+res://Scenes/clouds.tscn
 res://Scenes/level.tscn
+res://Scripts/CloudController.cs
+res://Scripts/manager.cs
 res://Scripts/column.cs
 res://Scripts/Skull.cs
-res://Scripts/manager.cs
 res://Scenes/Skull.tscn
 res://Scenes/column.tscn
+res://Scripts/StartGameInput.cs

@@ -12,11 +12,13 @@ public partial class column : Node2D
     Vector2 TopColumnInitialPosition { get; set; }
     Vector2 BottomColumnInitialPosition { get; set; }
     Vector2 InitialPosition { get; set; }
+    AudioStreamPlayer2D PickupSound;
 
     public override void _Ready()
     {
         TopColumn = GetNode<StaticBody2D>("TopColumn");
         BottomColumn = GetNode<StaticBody2D>("BottomColumn");
+        PickupSound = GetNode<AudioStreamPlayer2D>("%PickupSound");
         TopColumnInitialPosition = TopColumn.Position;
         BottomColumnInitialPosition = BottomColumn.Position;
         InitialPosition = Position;
@@ -53,6 +55,7 @@ public partial class column : Node2D
     {
         if (body is Skull skull)
         {
+            PickupSound.Play();
             skull.AddScore(1);
             EventRegistry.GetEventPublisher("OnPassColumn").RaiseEvent(skull);
         }
